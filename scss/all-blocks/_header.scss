@@ -1,0 +1,19 @@
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 44px 20px;
+}
+
+@media only screen and (max-width: 568px){
+    .header .container{
+        flex-direction: column;
+    }
+
+    .nav{
+        &__item{
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+}

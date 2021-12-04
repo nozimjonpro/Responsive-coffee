@@ -1,0 +1,95 @@
+.hero .container {
+  margin-bottom: 136px;
+}
+
+.hero__inset {
+  padding: 117px 85px;
+  background-image: url(/img/coffee_hero.png);
+  background-repeat: no-repeat;
+  background-size: 1280px 600px;
+//   background-position: center;
+}
+
+.hero__heading {
+  max-width: 493px;
+  width: 100%;
+  margin-bottom: 32px;
+  @include common-heading(72px, 72px, $nearWhite);
+}
+
+.hero__text{
+    max-width: 445px;
+    width: 100%;
+    margin-bottom: 56px;
+    opacity: 0.8;
+    @include common-text();
+}
+
+.hero__link{
+    text-decoration: none;
+    @include button();
+}
+
+
+@media only screen and (max-width: 702px){
+
+    .hero__inset{
+        padding: 104px 58px;
+    }
+
+    .hero__heading{
+        width: 100%;
+        @include common-heading(48px, 48px)
+    }
+
+    .hero__text{
+        width: 100%;
+        @include common-text(15px, 25px)
+    }
+}
+
+@media only screen and(max-width: 537px){
+
+    .hero__inset{
+        padding: 100px 24px;
+    }
+
+    .hero__heading{
+        max-width: 279px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        text-align: center;
+        @include common-heading (40px, 40px)
+    }
+
+    .hero__text{
+        width: 100%;
+        text-align: center;
+    }
+    .hero__link{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and(max-width: 362px){
+
+    .hero .container {
+        margin-bottom: 120px;
+      }
+
+    .hero__inset{
+        padding: 80px 10px;
+    }
+
+    .hero__heading{
+        -webkit-user-drag: 100%;
+        @include common-heading(32px, 32px)
+        
+    }
+
+    .hero__text{
+        width: 100%;
+        @include common-text(13px, 22px)
+    }
+}
